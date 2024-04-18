@@ -72,6 +72,7 @@
         -webkit-animation: spinner .75s linear infinite;
         animation: spinner .75s linear infinite;
       }
+      
       @-webkit-keyframes spinner {
         100% {
           -webkit-transform: rotate(360deg);
@@ -105,6 +106,28 @@
     <link rel="stylesheet" media="screen" href="vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <style>
+      .btn-primary {
+        background: rgba(39, 39, 63, 1) !important;
+      }
+      .text-primary {
+        color: rgba(39, 39, 63, 1) !important;
+      }
+      .callout {
+        border-left: .25rem solid #ebb57a;
+      }
+      .bg-gradient  {
+        background-color: #ebb57a !important;
+        background-image: none !important;
+      }
+      .blockquote::before {
+        color: #f6d4ae;
+      }
+      .nav-link-style:hover {
+        color: rgba(39, 39, 63, 1) !important;
+        font-weight: bold !important;
+      }
+    </style>
   </head>
   <!-- Body-->
   <body>
@@ -195,7 +218,7 @@
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
       <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-scroll-header data-fixed-element>
         <div class="container px-0 px-xl-3">
-          <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="index.html"><img class="d-none d-lg-block" src="img/logo/logo-dark.png" alt="Around" width="153"><img class="d-lg-none" src="img/logo/logo-icon.png" alt="Around" width="58"></a>
+          <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="index.html"><img class="d-none d-lg-block" src="img/logo/logo_savychef.jpeg" alt="Around" width="68"><img class="d-lg-none" src="img/logo/logo_savychef.jpeg" alt="Around" width="58"></a>
           <div class="d-flex align-items-center order-lg-3 ms-lg-auto"><a class="nav-link-style fs-sm text-nowrap" href="#modal-signin" data-bs-toggle="modal" data-view="#modal-signin-view"><i class="ai-user fs-xl me-2 align-middle"></i>Sign in</a><a class="btn btn-primary ms-grid-gutter d-none d-lg-inline-block" href="#modal-signin" data-bs-toggle="modal" data-view="#modal-signup-view">Sign up</a></div>
           <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
             <div class="offcanvas-header navbar-shadow">
@@ -224,7 +247,7 @@
       <!-- Hero-->
       <section class="container-fluid px-0 pb-5 pb-md-6">
         <div class="row g-0 align-items-xl-center">
-          <div class="col-lg-6 col-md-7 text-end order-md-2"><img class="d-inline-block" src="img/demo/business-consulting/hero-img.jpg" alt="Business people" width="945"></div>
+          <div class="col-lg-6 col-md-7 text-end order-md-2"><img class="d-none d-lg-inline-block" src="img/hero_savychef.jpeg" alt="Business people" style="width: 100%; height: 90vh;"></div>
           <div class="col-lg-6 col-md-5 pt-5 pb-3 py-md-5">
             <div class="mx-auto me-md-5 me-xl-7 ps-3 py-md-3 order-md-1" style="max-width: 516px;">
               <h1 class="mb-grid-gutter pb-1">SavvyChef - Elevate Your Culinary Experience</h1>
@@ -244,21 +267,21 @@
             <div class="mx-auto" style="max-width: 610px;">
               <div class="row align-items-center">
                 <div class="col-sm-6">
-                  <div class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"><img class="d-inline-block mb-4 mt-2" src="img/demo/business-consulting/services/01.svg" alt="Icon" width="100">
+                  <div class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"><img class="d-inline-block mb-4 mt-2" src="img/feature_1.jpeg" alt="Icon" width="100">
                     <h3 class="h5 mb-2">Effortless Recipe Input</h3>
                     <p class="fs-sm">Easily upload, type, or snap photos of your favorite recipes. Let SavvyChef handle the rest, detecting ingredients, measurements, and more.</p>
                   </div>
-                  <div class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"><img class="d-inline-block mb-4 mt-2" src="img/demo/business-consulting/services/02.svg" alt="Icon" width="100">
+                  <div class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"><img class="d-inline-block mb-4 mt-2" src="img/feature_3.jpeg" alt="Icon" width="100">
                     <h3 class="h5 mb-2">Smart Unit Conversion</h3>
                     <p class="fs-sm">Customize your cooking experience by choosing preferred units for measurements and temperatures. SavvyChef converts everything seamlessly for precise cooking.</p>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"><img class="d-inline-block mb-4 mt-2" src="img/demo/business-consulting/services/04.svg" alt="Icon" width="100">
+                  <div class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"><img class="d-inline-block mb-4 mt-2" src="img/feature.2.jpeg" alt="Icon" width="100">
                     <h3 class="h5 mb-2">Ingredient Substitution Wizard</h3>
                     <p class="fs-sm">Out of an ingredient? SavvyChef suggests alternatives based on your preferences or dietary restrictions, ensuring you never miss a beat in the kitchen. </p>
                   </div>
-                  <div class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"><img class="d-inline-block mb-4 mt-2" src="img/demo/business-consulting/services/05.svg" alt="Icon" width="100">
+                  <div class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"><img class="d-inline-block mb-4 mt-2" src="img/feature_4.jpeg" alt="Icon" width="100">
                     <h3 class="h5 mb-2">User-Friendly Interface</h3>
                     <p class="fs-sm">Navigate with ease through SavvyChef's intuitive design, complete with tooltips and explanations to guide you every step of the way.</p>
                   </div>
@@ -273,7 +296,7 @@
         <h2 class="d-block bg-gradient text-light text-center py-5 px-3 mb-5">Choose Your Plan</h2>
         <div class="container pt-2">
           <div class="d-sm-flex align-items-center justify-content-center text-center text-sm-start">
-            <h3 class="mb-4 mb-sm-2 me-sm-4 pe-sm-2">Unlock the full potential of SavvyChef with our flexible pricing options.</h3><a class="btn btn-success mb-sm-2" href="#">Get Started</a>
+            <h3 class="mb-4 mb-sm-2 me-sm-4 pe-sm-2">Unlock the full potential of SavvyChef with our flexible pricing options.</h3><a class="btn btn-primary mb-sm-2" href="#">Get Started</a>
           </div>
           <div class="row justify-content-center pt-5">
             <div class="col-lg-10">
@@ -319,7 +342,7 @@
                 <!-- Item-->
                 <div>
                   <div class="pb-3 pb-md-0 ps-md-7 ms-md-3">
-                    <div class="bg-size-cover bg-position-center rounded-3 py-7" style="background-image: url(img/demo/business-consulting/testimonials/01.jpg);">
+                    <div class="bg-size-cover rounded-3 py-7" style="background-image: url(img/testimonio_1.jpeg); background-size: 100% !important;">
                       <div class="d-md-flex align-items-center ms-md-n7 text-center text-md-start">
                         <div class="card card-body d-none d-md-flex py-grid-gutter px-grid-gutter border-0 shadow-lg me-6 scale-up" style="max-width: 28rem;">
                           <blockquote class="blockquote">
@@ -342,7 +365,7 @@
                 <!-- Item-->
                 <div>
                   <div class="pb-3 pb-md-0 ps-md-7 ms-md-3">
-                    <div class="bg-size-cover bg-position-center rounded-3 py-7" style="background-image: url(img/demo/business-consulting/testimonials/02.jpg);">
+                    <div class="bg-size-cover rounded-3 py-7" style="background-image: url(img/testimonio2.jpeg); background-size: cover;">
                       <div class="d-md-flex align-items-center ms-md-n7 text-center text-md-start">
                         <div class="card card-body d-none d-md-flex py-grid-gutter px-grid-gutter border-0 shadow-lg me-6 scale-up" style="max-width: 28rem;">
                           <blockquote class="blockquote">
